@@ -10,7 +10,7 @@ dotenv.config();
 const app = express();
 
 try {
-    await db.authenticate();
+    db.authenticate();
     console.log("Database Connected....")
 } catch (error) {
     console.error(error);
