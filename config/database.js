@@ -1,7 +1,7 @@
 import { Sequelize } from "sequelize";
 
-const db = new Sequelize('wicara','root','password',{
-    host: "34.101.156.203",
+const db = new Sequelize('wicara_db','root','password',{
+    host: "34.101.150.123",
     dialect: "mysql"
 })
 
