@@ -10,7 +10,7 @@ dotenv.config();
 const app = express();
 
 try {
-    await db.authenticate();
+    db.authenticate();
     console.log("Database Connected....")
 } catch (error) {
     console.error(error);
@@ -22,4 +22,4 @@ app.use(express.json());
 app.use(router);
 
 
-app.listen(5000, ()=> console.log("Server Running at port 5000"))
+app.listen(80, ()=> console.log("Server Running at port 80"))
